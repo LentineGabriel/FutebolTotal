@@ -1,0 +1,9 @@
+.palmeiras {
+  background-color: #005a00;
+}
+.navbar-principal-itens .login-btn {
+  background-color: #2abe43;
+}
+.navbar-principal-itens .login-btn:hover {
+  background-color: #00e727;
+}
