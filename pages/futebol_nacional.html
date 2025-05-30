@@ -3,20 +3,451 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/index.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/futebol-nacional.css" />
     <title>Nacional - Futebol Total</title>
   </head>
   <body>
     <header class="menu-container">
       <nav class="navbar-principal">
-        <ul class="navbar-principal-itens">
-          <li class="menu-item"><a href="../index.html">Início</a></li>
-          <li class="menu-item"><a class="secao-btn" href="../pages/futebol_nacional.html">Futebol Nacional</a></li>
-          <li class="menu-item"><a href="../pages/futebol_internacional.html">Futebol Internacional</a></li>
-          <li><a href="pages/login.html" class="login-btn">Entrar</a></li>
-        </ul>
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../assets/img/logo-ft.png"
+            alt="Logo do Futebol Total"
+        /></a>
+        <a href="../pages/futebol_nacional.html" class="refresh-name"
+          >futebol nacional</a
+        >
       </nav>
     </header>
-    <h1>Futebol Nacional</h1>
+    <main>
+      <div class="futebol-nacional-container">
+        <!-- notícias -->
+        <div class="noticias-nacionais-container">
+          <!-- notícia um - Abel/Palmeiras -->
+          <article>
+            <figure class="abel-container">
+              <img
+                src="../assets/img/abel-ferreira.webp"
+                alt="Abel Ferreira, técnico do Palmeiras"
+                class="abel-photo"
+              />
+              <figcaption class="abel-maintext">
+                Em busca de um nome!
+              </figcaption>
+              <p class="abel-subtext">
+                Saiba os planos do Palmeiras para reposições no mercado.
+              </p>
+            </figure>
+          </article>
+
+          <!-- notícia dois - Dorival/Corinthians -->
+          <article>
+            <figure class="dorival-container">
+              <img
+                src="../assets/img/dorival-junior.webp"
+                alt="Dorival Júnior, técnico do Corinthians"
+                class="dorival-photo"
+              />
+              <figcaption class="dorival-maintext">
+                Dorival completa um mês e meio a turbulências; veja raio-x.
+              </figcaption>
+              <p class="dorival-subtext">
+                Treinador foi anunciado no dia 28 de abril de 2025.
+              </p>
+            </figure>
+          </article>
+
+          <!-- notícia três - Igor Jesus/Botafogo -->
+          <article>
+            <figure class="igor-jesus-container">
+              <img
+                src="../assets/img/igor-jesus.webp"
+                alt="Igor Jesus, jogador do Botafogo"
+                class="igor-jesus-photo"
+              />
+              <figcaption class="igor-jesus-maintext">
+                Botafogo recebe proposta do Nottigham Forest por Igor Jesus!
+              </figcaption>
+              <p class="igor-jesus-subtext">
+                Valores superam R$120 milhões, mas clube carioca acredita que
+                pode receber ainda mais.
+              </p>
+            </figure>
+          </article>
+
+          <!-- notícia quatro -->
+          <article></article>
+        </div>
+      </div>
+
+      <!-- classificação -->
+      <div class="classificacao-container">
+        <h2 class="classificacao-titulo">Classificação - 10ª Rodada</h2>
+        <table class="tabela-classificacao">
+          <thead>
+            <tr>
+              <th class="posicao">P</th>
+              <th class="time">Time</th>
+              <th class="pontos">P</th>
+              <th class="jogos">J</th>
+              <th class="vitorias">V</th>
+              <th class="empates">E</th>
+              <th class="derrotas">D</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="posicao libertadores">1</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/palmeiras.webp"
+                  alt="Escudo do Palmeiras"
+                  class="time-logo"
+                />
+                <span class="time-nome">Palmeiras</span>
+              </td>
+              <td class="pontos">22</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">7</td>
+              <td class="empates">1</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao libertadores">2</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/flamengo.webp"
+                  alt="Escudo do Flamengo"
+                  class="time-logo"
+                />
+                <span class="time-nome">Flamengo</span>
+              </td>
+              <td class="pontos">21</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">6</td>
+              <td class="empates">3</td>
+              <td class="derrotas">1</td>
+            </tr>
+            <tr>
+              <td class="posicao libertadores">3</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/cruzeiro.webp"
+                  alt="Escudo do Cruzeiro"
+                  class="time-logo"
+                />
+                <span class="time-nome">Cruzeiro</span>
+              </td>
+              <td class="pontos">20</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">6</td>
+              <td class="empates">2</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao libertadores">4</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/bragantinho.webp"
+                  alt="Escudo do Bragantino"
+                  class="time-logo"
+                />
+                <span class="time-nome">Bragantino</span>
+              </td>
+              <td class="pontos">20</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">6</td>
+              <td class="empates">2</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao pre-libertadores">5</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/fluminense.webp"
+                  alt="Escudo do Fluminense"
+                  class="time-logo"
+                />
+                <span class="time-nome">Fluminense</span>
+              </td>
+              <td class="pontos">17</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">5</td>
+              <td class="empates">2</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao pre-libertadores">6</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/ceara.webp"
+                  alt="Escudo do Ceará"
+                  class="time-logo"
+                />
+                <span class="time-nome">Ceará</span>
+              </td>
+              <td class="pontos">15</td>
+              <td class="jogos">9</td>
+              <td class="vitorias">4</td>
+              <td class="empates">3</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao sul-americana">7</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/bahia.webp"
+                  alt="Escudo do Bahia"
+                  class="time-logo"
+                />
+                <span class="time-nome">Bahia</span>
+              </td>
+              <td class="pontos">15</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">4</td>
+              <td class="empates">3</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao sul-americana">8</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/corinthians.webp"
+                  alt="Escudo do Corinthians"
+                  class="time-logo"
+                />
+                <span class="time-nome">Corinthians</span>
+              </td>
+              <td class="pontos">14</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">3</td>
+              <td class="empates">5</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao sul-americana">9</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/mirassol.webp"
+                  alt="Escudo do Mirassol"
+                  class="time-logo"
+                />
+                <span class="time-nome">Mirassol</span>
+              </td>
+              <td class="pontos">14</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">3</td>
+              <td class="empates">5</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao sul-americana">10</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/atletico-mg.webp"
+                  alt="Escudo do Atlético Mineiro"
+                  class="time-logo"
+                />
+                <span class="time-nome">Atlético-MG</span>
+              </td>
+              <td class="pontos">14</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">3</td>
+              <td class="empates">5</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao sul-americana">11</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/botafogo.webp"
+                  alt="Escudo do Botafogo"
+                  class="time-logo"
+                />
+                <span class="time-nome">Botafogo</span>
+              </td>
+              <td class="pontos">12</td>
+              <td class="jogos">9</td>
+              <td class="vitorias">3</td>
+              <td class="empates">3</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao sul-americana">12</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/gremio.webp"
+                  alt="Escudo do Grêmio"
+                  class="time-logo"
+                />
+                <span class="time-nome">Grêmio</span>
+              </td>
+              <td class="pontos">12</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">3</td>
+              <td class="empates">3</td>
+              <td class="derrotas">4</td>
+            </tr>
+            <tr>
+              <td class="posicao">13</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/sao-paulo.webp"
+                  alt="Escudo do São Paulo"
+                  class="time-logo"
+                />
+                <span class="time-nome">São Paulo</span>
+              </td>
+              <td class="pontos">12</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">2</td>
+              <td class="empates">6</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao">14</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/internacional.webp"
+                  alt="Escudo do Internacional"
+                  class="time-logo"
+                />
+                <span class="time-nome">Internacional</span>
+              </td>
+              <td class="pontos">11</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">2</td>
+              <td class="empates">5</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao">15</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/vasco.webp"
+                  alt="Escudo do Vasco"
+                  class="time-logo"
+                />
+                <span class="time-nome">Vasco da Gama</span>
+              </td>
+              <td class="pontos">10</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">3</td>
+              <td class="empates">1</td>
+              <td class="derrotas">6</td>
+            </tr>
+            <tr>
+              <td class="posicao">16</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/fortaleza.webp"
+                  alt="Escudo do Fortaleza"
+                  class="time-logo"
+                />
+                <span class="time-nome">Fortaleza</span>
+              </td>
+              <td class="pontos">10</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">2</td>
+              <td class="empates">4</td>
+              <td class="derrotas">4</td>
+            </tr>
+            <tr>
+              <td class="posicao rebaixamento">17</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/vitoria.webp"
+                  alt="Escudo do Vitória"
+                  class="time-logo"
+                />
+                <span class="time-nome">Vitória</span>
+              </td>
+              <td class="pontos">9</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">2</td>
+              <td class="empates">3</td>
+              <td class="derrotas">5</td>
+            </tr>
+            <tr>
+              <td class="posicao rebaixamento">18</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/santos.webp"
+                  alt="Escudo do Santos"
+                  class="time-logo"
+                />
+                <span class="time-nome">Santos</span>
+              </td>
+              <td class="pontos">8</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">2</td>
+              <td class="empates">2</td>
+              <td class="derrotas">6</td>
+            </tr>
+            <tr>
+              <td class="posicao rebaixamento">19</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/juventude.webp"
+                  alt="Escudo do Juventude"
+                  class="time-logo"
+                />
+                <span class="time-nome">Juventude</span>
+              </td>
+              <td class="pontos">8</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">2</td>
+              <td class="empates">2</td>
+              <td class="derrotas">6</td>
+            </tr>
+            <tr>
+              <td class="posicao rebaixamento">20</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/sport.webp"
+                  alt="Escudo do Sport"
+                  class="time-logo"
+                />
+                <span class="time-nome">Sport</span>
+              </td>
+              <td class="pontos">3</td>
+              <td class="jogos">10</td>
+              <td class="vitorias">0</td>
+              <td class="empates">3</td>
+              <td class="derrotas">7</td>
+            </tr>
+            <!-- Adicione mais times aqui -->
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer-container">
+      <p class="footer-main-paragraph">
+        O Futebol Total foi criado por Gabriel Lentine, um fã de futebol e
+        notícias sobre o esporte! Acompanhe-me nas minhas redes sociais.
+      </p>
+      <p class="footer-sub-paragraph">&copy LentineGabriel, 2025</p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/lentinegabriel/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/LentineGabriel" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

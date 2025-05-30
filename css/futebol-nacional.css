@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* navbar */
+.refresh-name {
+  color: #fff;
+  font-weight: lighter;
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 20px;
+  position: absolute;
+  left: 50%;
+  bottom: 2px;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+/* body */
+main {
+  font-family: "Sansita", sans-serif;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  margin-top: 20px;
+}
+/* container de notícias */
+.futebol-nacional-container {
+  width: 70%;
+  padding: 20px;
+  position: relative;
+}
+.noticias-nacionais-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.abel-container,
+.dorival-container,
+.igor-jesus-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 30px 0 0 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.abel-photo,
+.dorival-photo,
+.igor-jesus-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: 0;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+.abel-container::after,
+.dorival-container::after,
+.igor-jesus-container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 40px);
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  z-index: 1;
+  border-radius: 10px;
+}
+.abel-maintext,
+.abel-subtext,
+.dorival-maintext,
+.dorival-subtext,
+.igor-jesus-maintext,
+.igor-jesus-subtext {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+  left: 20px;
+  bottom: 100px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-wrap: break-word;
+  width: 100%;
+}
+.abel-maintext,
+.dorival-maintext,
+.igor-jesus-maintext {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.abel-subtext,
+.dorival-subtext,
+.igor-jesus-subtext {
+  font-size: 16px;
+  color: #ccc;
+  bottom: 85px;
+}
+.dorival-container {
+  bottom: 130px;
+}
+.dorival-maintext {
+  font-size: 24px;
+  bottom: 50px;
+}
+.dorival-subtext {
+  bottom: 30px;
+}
+.dorival-photo {
+  position: relative;
+  top: 50px;
+}
+.abel-container::after {
+  left: 20px;
+  bottom: 72px;
+}
+.dorival-container::after {
+  left: 20px;
+  bottom: 15px;
+  width: calc(100% - 40px);
+}
+.igor-jesus-container {
+  bottom: 210px;
+}
+.igor-jesus-photo {
+  position: relative;
+  top: 60px;
+}
+.igor-jesus-maintext {
+  font-size: 24px;
+  bottom: 50px;
+}
+.igor-jesus-subtext {
+  font-size: 17px;
+  bottom: 30px;
+}
+.igor-jesus-container::after {
+  left: 20px;
+  bottom: 6px;
+  width: calc(100% - 40px);
+}
+
+/* Tabela de classificação */
+.classificacao-container {
+  width: 30%;
+  margin-top: 40px;
+  margin-right: 10px;
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-left: 1px solid #333;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.classificacao-titulo {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+.tabela-classificacao {
+  width: 100%;
+  border-collapse: collapse;
+  margin-right: 20px;
+}
+.tabela-classificacao th,
+.tabela-classificacao td {
+  color: #fff;
+  padding: 10px 8px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+.tabela-classificacao th {
+  font-weight: bold;
+  background-color: #2a2a2a;
+}
+.tabela-classificacao tr:hover {
+  background-color: #17c033;
+  cursor: pointer;
+}
+
+.tabela-classificacao tr:hover .posicao.libertadores {
+  color: #17411c;
+}
+
+.tabela-classificacao tr:hover .posicao.pre-libertadores {
+  color: #17411c;
+}
+
+.tabela-classificacao tr:hover .posicao.sul-americana {
+  color: #17411c;
+}
+
+.posicao {
+  width: 30px;
+  text-align: center;
+}
+
+/* Cores das posições */
+.posicao.libertadores {
+  color: #17c033;
+}
+.posicao.libertadores:hover {
+  color: #17411c;
+}
+.posicao.pre-libertadores {
+  color: #00bfff;
+}
+.posicao.sul-americana {
+  color: #0d8a1c;
+}
+.posicao.rebaixamento {
+  color: #ff0000;
+}
+
+.time {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.time-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+.time-nome {
+  flex: 1;
+}
+.pontos,
+.jogos,
+.vitorias,
+.empates,
+.derrotas {
+  width: 40px;
+  text-align: center;
+}
