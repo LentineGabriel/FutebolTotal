@@ -3,12 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo-site.ico"
+      type="image/x-icon"
+    />
     <title>FT - Futebol Total</title>
   </head>
   <body>
     <header class="menu-container">
       <nav class="navbar-principal">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="assets/img/logo-ft.png"
+            alt="Logo do Futebol Total"
+        /></a>
         <ul class="navbar-principal-itens">
           <li class="menu-item">
             <a class="secao-btn" href="index.html">Início</a>
@@ -20,9 +38,7 @@
             <a href="pages/futebol_internacional.html">Futebol Internacional</a>
           </li>
           <li>
-            <a href="pages/navbar-principal/login.html" class="login-btn"
-              >Entrar</a
-            >
+            <a href="pages/login.html" class="login-btn">Entrar</a>
           </li>
         </ul>
       </nav>
@@ -60,41 +76,472 @@
     </header>
 
     <main>
-      <!-- notice one -->
-      <article>
-        <figure class="chelsea-winner-container">
-          <img
-            src="assets/img/chelsea-winner.avif"
-            alt="Chelsea campeão da Conference League"
-            class="chelsea-winner-photo"
-          />
-          <figcaption class="chelsea-winner-maintext">
-            Chelsea supera Real Bétis no segundo tempo, vira o jogo e conquista
-            a UEFA Conference League!
-          </figcaption>
-          <p class="chelsea-winner-subtext">
-            Real Bétis abre o placar, mas sofre virada em "apagão" e fica com o
-            vice-campeonato.
-          </p>
-        </figure>
-      </article>
+      <div class="noticias-container">
+        <!-- notice one - Chelsea -->
+        <article>
+          <figure class="chelsea-winner-container">
+            <img
+              src="assets/img/chelsea-winner.avif"
+              alt="Chelsea campeão da Conference League"
+              class="chelsea-winner-photo"
+            />
+            <figcaption class="chelsea-winner-maintext">
+              Chelsea supera Real Bétis no segundo tempo, vira o jogo e
+              conquista a UEFA Conference League!
+            </figcaption>
+            <p class="chelsea-winner-subtext">
+              Real Bétis abre o placar, mas sofre virada em "apagão" e fica com
+              o vice-campeonato.
+            </p>
+          </figure>
+        </article>
 
-      <!-- notice two -->
-      <article>
-        <figure class="estevao-container">
-          <img
-            src="assets/img/estevao.webp"
-            alt="Estêvâo comemorando um gol pelo Palmeiras"
-            class="estevao-photo"
-          />
-          <figcaption class="estevao-maintext">
-            Estêvâo se despede do Allianz Parque nesta quarta-feira, em duelo contra Sporting Cristal!
-          </figcaption>
-          <p class="estevao-subtext">
-            Jogo é válido pela última rodada do Grupo G da CONMEBOL Libertadores da América.
-          </p>
-        </figure>
-      </article>
+        <!-- notice two - Palmeiras -->
+        <article>
+          <figure class="palmeiras-container">
+            <img
+              src="assets/img/estevao.webp"
+              alt="Estêvâo comemorando um gol pelo Palmeiras"
+              class="estevao-photo"
+            />
+            <figcaption class="palmeiras-maintext">
+              Estêvâo se despede do Allianz Parque com gol e assistência em
+              "chocolate" do Palmeiras.
+            </figcaption>
+            <p class="palmeiras-subtext">
+              Equipe paulista goleou o Sporting Cristal (PER) por 6x0 e termina
+              fase de grupos com 100% de aproveitamento.
+            </p>
+          </figure>
+        </article>
+
+        <!-- notice three - Flamengo -->
+        <article>
+          <figure class="flamengo-container">
+            <img
+              src="assets/img/LeoPereirawebp.webp"
+              alt="Léo Pereira comemorando o gol da classificação do Flamengo"
+              class="flamengo-photo"
+            />
+            <figcaption class="flamengo-maintext">
+              Com gol 'salvador' de Léo Pereira, Flamengo bate pior time da
+              edição e se classifica para o mata-mata!
+            </figcaption>
+            <p class="flamengo-subtext">
+              Apesar do triunfo, o Mais Querido não jogou bem e foi vaiado pela
+              torcida ao final do confronto.
+            </p>
+          </figure>
+        </article>
+      </div>
+
+      <hr class="divisoria" />
+
+      <!-- standings - Libertadores -->
+      <section class="libertadores-container">
+        <h3 class="libertadores-title">Taça Conmebol Libertadores 2025</h3>
+        <table class="standings-container">
+          <!-- GRUPO A -->
+          <thead class="indice">
+            <tr>
+              <th>GRUPO A</th>
+              <th class="result">Pontos</th>
+              <th class="result">Jogos</th>
+              <th class="result">Vitórias</th>
+              <th class="result">Saldo de Gols</th>
+            </tr>
+          </thead>
+          <tbody class="times">
+            <tr>
+              <td>Estudiantes</td>
+              <td class="standings-points">12</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">4</td>
+              <td class="standings-sg">6</td>
+            </tr>
+            <tr>
+              <td>Botafogo</td>
+              <td class="standings-points">12</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">4</td>
+              <td class="standings-sg">3</td>
+            </tr>
+            <tr>
+              <td>U. de Chile</td>
+              <td class="standings-points">10</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">3</td>
+              <td class="standings-sg">2</td>
+            </tr>
+            <tr>
+              <td>Carabobo</td>
+              <td class="standings-points">1</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">0</td>
+              <td class="standings-sg">-11</td>
+            </tr>
+          </tbody>
+
+          <!-- GRUPO B -->
+          <thead class="indice">
+            <tr>
+              <th>GRUPO B</th>
+              <th class="result">Pontos</th>
+              <th class="result">Jogos</th>
+              <th class="result">Vitórias</th>
+              <th class="result">Saldo de Gols</th>
+            </tr>
+          </thead>
+          <tbody class="times">
+            <tr>
+              <td>River Plate</td>
+              <td class="standings-points">12</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">3</td>
+              <td class="standings-sg">6</td>
+            </tr>
+            <tr>
+              <td>Universitário</td>
+              <td class="standings-points">8</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">0</td>
+            </tr>
+            <tr>
+              <td>Ind. del Valle</td>
+              <td class="standings-points">8</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">-3</td>
+            </tr>
+            <tr>
+              <td>Barcelona (EQU)</td>
+              <td class="standings-points">4</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">1</td>
+              <td class="standings-sg">-3</td>
+            </tr>
+          </tbody>
+
+          <!-- GRUPO C -->
+          <thead class="indice">
+            <tr>
+              <th>GRUPO C</th>
+              <th class="result">Pontos</th>
+              <th class="result">Jogos</th>
+              <th class="result">Vitórias</th>
+              <th class="result">Saldo de Gols</th>
+            </tr>
+          </thead>
+          <tbody class="times">
+            <tr>
+              <td>Liga de Quito</td>
+              <td class="standings-points">11</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">3</td>
+              <td class="standings-sg">4</td>
+            </tr>
+            <tr>
+              <td>Flamengo</td>
+              <td class="standings-points">11</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">3</td>
+            </tr>
+            <tr>
+              <td>Central Córdoba</td>
+              <td class="standings-points">11</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">3</td>
+              <td class="standings-sg">0</td>
+            </tr>
+            <tr>
+              <td>Deportivo Táchira</td>
+              <td class="standings-points">0</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">0</td>
+              <td class="standings-sg">-7</td>
+            </tr>
+          </tbody>
+
+          <!-- GRUPO D -->
+          <thead class="indice">
+            <tr>
+              <th>GRUPO D</th>
+              <th class="result">Pontos</th>
+              <th class="result">Jogos</th>
+              <th class="result">Vitórias</th>
+              <th class="result">Saldo de Gols</th>
+            </tr>
+          </thead>
+          <tbody class="times">
+            <tr>
+              <td>São Paulo</td>
+              <td class="standings-points">14</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">4</td>
+              <td class="standings-sg">6</td>
+            </tr>
+            <tr>
+              <td>Libertad</td>
+              <td class="standings-points">9</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">1</td>
+            </tr>
+            <tr>
+              <td>Alianza Lima</td>
+              <td class="standings-points">5</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">1</td>
+              <td class="standings-sg">-4</td>
+            </tr>
+            <tr>
+              <td>Talleres</td>
+              <td class="standings-points">4</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">1</td>
+              <td class="standings-sg">-3</td>
+            </tr>
+          </tbody>
+
+          <!-- GRUPO E -->
+          <thead class="indice">
+            <tr>
+              <th>GRUPO E</th>
+              <th class="result">Pontos</th>
+              <th class="result">Jogos</th>
+              <th class="result">Vitórias</th>
+              <th class="result">Saldo de Gols</th>
+            </tr>
+          </thead>
+          <tbody class="times">
+            <tr>
+              <td>Racing</td>
+              <td class="standings-points">10</td>
+              <td class="standings-matches">5</td>
+              <td class="standings-victory">3</td>
+              <td class="standings-sg">10</td>
+            </tr>
+            <tr>
+              <td>Fortaleza</td>
+              <td class="standings-points">8</td>
+              <td class="standings-matches">5</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">4</td>
+            </tr>
+            <tr>
+              <td>Atlético Bucaramanga</td>
+              <td class="standings-points">6</td>
+              <td class="standings-matches">5</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">-3</td>
+            </tr>
+            <tr>
+              <td>Colo Colo</td>
+              <td class="standings-points">2</td>
+              <td class="standings-matches">5</td>
+              <td class="standings-victory">0</td>
+              <td class="standings-sg">-11</td>
+            </tr>
+          </tbody>
+
+          <!-- GRUPO F -->
+          <thead class="indice">
+            <tr>
+              <th>GRUPO F</th>
+              <th class="result">Pontos</th>
+              <th class="result">Jogos</th>
+              <th class="result">Vitórias</th>
+              <th class="result">Saldo de Gols</th>
+            </tr>
+          </thead>
+          <tbody class="times">
+            <tr>
+              <td>Internacional</td>
+              <td class="standings-points">11</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">3</td>
+              <td class="standings-sg">4</td>
+            </tr>
+            <tr>
+              <td>Atlético Nacional</td>
+              <td class="standings-points">9</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">3</td>
+              <td class="standings-sg">1</td>
+            </tr>
+            <tr>
+              <td>Bahia</td>
+              <td class="standings-points">7</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">-2</td>
+            </tr>
+            <tr>
+              <td>Nacional</td>
+              <td class="standings-points">7</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">-3</td>
+            </tr>
+          </tbody>
+
+          <!-- GRUPO G -->
+          <thead class="indice">
+            <tr>
+              <th>GRUPO G</th>
+              <th class="result">Pontos</th>
+              <th class="result">Jogos</th>
+              <th class="result">Vitórias</th>
+              <th class="result">Saldo de Gols</th>
+            </tr>
+          </thead>
+          <tbody class="times">
+            <tr>
+              <td>Palmeiras</td>
+              <td class="standings-points">18</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">6</td>
+              <td class="standings-sg">13</td>
+            </tr>
+            <tr>
+              <td>Cerro Porteño</td>
+              <td class="standings-points">7</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">-4</td>
+            </tr>
+            <tr>
+              <td>Bolívar</td>
+              <td class="standings-points">6</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">1</td>
+            </tr>
+            <tr>
+              <td>Sporting Cristal</td>
+              <td class="standings-points">4</td>
+              <td class="standings-matches">6</td>
+              <td class="standings-victory">1</td>
+              <td class="standings-sg">-10</td>
+            </tr>
+          </tbody>
+
+          <!-- GRUPO H -->
+          <thead class="indice">
+            <tr>
+              <th>GRUPO H</th>
+              <th class="result">Pontos</th>
+              <th class="result">Jogos</th>
+              <th class="result">Vitórias</th>
+              <th class="result">Saldo de Gols</th>
+            </tr>
+          </thead>
+          <tbody class="times">
+            <tr>
+              <td>Vélez Sarsfield</td>
+              <td class="standings-points">10</td>
+              <td class="standings-matches">5</td>
+              <td class="standings-victory">3</td>
+              <td class="standings-sg">7</td>
+            </tr>
+            <tr>
+              <td>Peñarol</td>
+              <td class="standings-points">10</td>
+              <td class="standings-matches">5</td>
+              <td class="standings-victory">3</td>
+              <td class="standings-sg">5</td>
+            </tr>
+            <tr>
+              <td>San Antonio Bulo Bulo</td>
+              <td class="standings-points">6</td>
+              <td class="standings-matches">5</td>
+              <td class="standings-victory">2</td>
+              <td class="standings-sg">-6</td>
+            </tr>
+            <tr>
+              <td>Olímpia</td>
+              <td class="standings-points">2</td>
+              <td class="standings-matches">5</td>
+              <td class="standings-victory">0</td>
+              <td class="standings-sg">-6</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr class="divisoria-two" />
+
+      <!-- newsletter -->
+      <section class="newsletter-container">
+        <h2 class="newsletter-title">
+          escolha o seu time e se inscreva na newsletter do futebol total!
+        </h2>
+        <p class="newsletter-subtitle">
+          e fique por dentro das notícias referentes ao seu time do coração.
+        </p>
+
+        <form>
+          <div class="team-option-container">
+            <label for="team-option">Escolha o seu time do coração</label>
+            <select id="team-option" name="team-option">
+              <option value="" disabled selected>Selecione seu time</option>
+              <option value="palmeiras">Palmeiras</option>
+              <option value="corinthians">Corinthians</option>
+              <option value="sao-paulo">São Paulo</option>
+              <option value="santos">Santos</option>
+              <option value="flamengo">Flamengo</option>
+              <option value="fluminense">Fluminense</option>
+              <option value="vasco">Vasco</option>
+              <option value="botafogo">Botafogo</option>
+              <option value="cruzeiro">Cruzeiro</option>
+              <option value="atletico-mg">Atlético-MG</option>
+              <option value="gremio">Grêmio</option>
+              <option value="internacional">Internacional</option>
+              <option value="barcelona">Barcelona</option>
+              <option value="real-madrid">Real Madrid</option>
+              <option value="psg">Paris Saint-Germain</option>
+              <option value="internazionale">Internazionale</option>
+            </select>
+
+            <div class="name-container">
+              <label for="name">Digite o seu nome para identificação</label>
+              <input
+                class="name-box"
+                type="text"
+                name="name"
+                placeholder="Digite o seu nome aqui"
+              />
+            </div>
+
+            <div class="email-container">
+              <label for="e-mail">Digite o seu melhor email</label>
+              <input
+                class="email-box"
+                type="email"
+                name="e-mail"
+                placeholder="Digite o seu e-mail aqui"
+              />
+            </div>
+          </div>
+
+          <input class="enviar-btn" type="submit" value="Enviar" />
+        </form>
+      </section>
+
+      <!-- footer -->
+      <footer class="footer-container">
+        <p class="footer-main-paragraph">
+          O Futebol Total foi criado por Gabriel Lentine, um fã de futebol e
+          notícias sobre o esporte! Acompanhe-me nas minhas redes sociais.
+        </p>
+        <p class="footer-sub-paragraph">&copy LentineGabriel, 2025</p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/lentinegabriel/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/LentineGabriel" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+      </footer>
     </main>
   </body>
 </html>
