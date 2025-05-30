@@ -333,12 +333,20 @@ main {
 .standings-container .times td:first-child {
   text-align: left;
   font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .standings-points {
   font-weight: bold;
 }
 .standings-victory {
   font-weight: bold;
+}
+.team-logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 /* newsletter */
