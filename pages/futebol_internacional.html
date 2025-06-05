@@ -1,22 +1,732 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/futebol-internacional.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo-site.ico"
+      type="image/x-icon"
+    />
     <title>Internacional - Futebol Total</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="menu-container">
-        <nav class="navbar-principal">
-            <ul class="navbar-principal-itens">
-              <li class="menu-item"><a href="../index.html">Início</a></li>
-              <li class="menu-item"><a href="../pages/futebol_nacional.html">Futebol Nacional</a></li>
-              <li class="menu-item"><a class="secao-btn" href="../pages/futebol_internacional.html">Futebol Internacional</a></li>
-              <li><a href="pages/navbar-principal/login.html" class="login-btn">Entrar</a></li>
-            </ul>
-          </nav>
+      <nav class="navbar-principal">
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../assets/img/logo-ft.png"
+            alt="Logo do Futebol Total"
+        /></a>
+        <a href="../pages/futebol_nacional.html" class="refresh-name"
+          >futebol internacional</a
+        >
+      </nav>
     </header>
-    <h1>Futebol Internacional</h1>
-</body>
+
+    <main>
+      <div class="futebol-internacional-container">
+        <!-- notícias -->
+        <div class="noticias-internacionais-container">
+          <!-- notícia um - Marquinhos/PSG -->
+          <article>
+            <figure class="psg-container">
+              <img
+                src="../assets/img/psg.webp"
+                alt="Marquinhos, jogador do PSG, campeão da Champions League"
+                class="marquinhos-photo"
+              />
+              <figcaption class="marquinhos-maintext">
+                Enfim, o PSG é campeão da Champions League!
+              </figcaption>
+              <p class="marquinhos-subtext">
+                Após 'chocolate' em cima da Internazionale, o PSG é campeão da
+                Champions League. Veja os melhores momentos!
+              </p>
+            </figure>
+          </article>
+
+          <!-- notícia dois - Tottenham -->
+          <article>
+            <figure class="spurs-container">
+              <img
+                src="../assets/img/spurs.webp"
+                alt="Tottenham, campeão da Liga Europa 2025"
+                class="spurs-photo"
+              />
+              <figcaption class="spurs-maintext">
+                Após 17 anos, Tottenham finalmente sai da fila e é campeão da
+                Europa League!
+              </figcaption>
+              <p class="spurs-subtext">
+                Título veio diante do Manchester United.
+              </p>
+            </figure>
+          </article>
+
+          <!-- notícia três - CR7/Portugal -->
+          <article>
+            <figure class="cr7-container">
+              <img
+                src="../assets/img/cr7.webp"
+                alt="Cristiano Ronaldo, comemorando seu gol marcado pela seleção portuguesa"
+                class="cr7-photo"
+              />
+              <figcaption class="cr7-maintext">
+                ele continua a marcar seu nome na história!
+              </figcaption>
+              <p class="cr7-subtext">
+                Aos 40 anos, CR7 garante a vaga de Portugal em mais uma final da
+                Nations League.
+              </p>
+            </figure>
+          </article>
+
+          <!-- notícia quatro -  -->
+          <article>
+            <figure class="inzaghi-container">
+              <img
+                src="../assets/img/inzaghi.webp"
+                alt="Cristiano Ronaldo, comemorando seu gol marcado pela seleção portuguesa"
+                class="inzaghi-photo"
+              />
+              <figcaption class="inzaghi-maintext">
+                O primeiro a sair...
+              </figcaption>
+              <p class="inzaghi-subtext">
+                Após a goleada sofrida na final da UCL, Simone Inzaghi é anunciado pelo Al-Hilal.
+              </p>
+            </figure>
+          </article>
+        </div>
+      </div>
+
+      <!-- classificação -->
+      <div class="classificacao-container">
+        <h2 class="classificacao-titulo">Champions League - Fase de Liga</h2>
+        <table class="tabela-classificacao">
+          <thead>
+            <tr>
+              <th class="posicao">P</th>
+              <th class="time">Time</th>
+              <th class="pontos">P</th>
+              <th class="jogos">J</th>
+              <th class="vitorias">V</th>
+              <th class="empates">E</th>
+              <th class="derrotas">D</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="posicao oitavas-de-final">1</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/liverpool.webp"
+                  alt="Escudo do Liverpool"
+                  class="time-logo"
+                />
+                <span class="time-nome">Liverpool</span>
+              </td>
+              <td class="pontos">21</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">7</td>
+              <td class="empates">0</td>
+              <td class="derrotas">1</td>
+            </tr>
+            <tr>
+              <td class="posicao oitavas-de-final">2</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/barcelona-espanha.webp"
+                  alt="Escudo do Barcelona"
+                  class="time-logo"
+                />
+                <span class="time-nome">Barcelona</span>
+              </td>
+              <td class="pontos">19</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">6</td>
+              <td class="empates">1</td>
+              <td class="derrotas">1</td>
+            </tr>
+            <tr>
+              <td class="posicao oitavas-de-final">3</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/arsenal-eng.webp"
+                  alt="Escudo do Arsenal"
+                  class="time-logo"
+                />
+                <span class="time-nome">Arsenal</span>
+              </td>
+              <td class="pontos">19</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">6</td>
+              <td class="empates">1</td>
+              <td class="derrotas">1</td>
+            </tr>
+            <tr>
+              <td class="posicao oitavas-de-final">4</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/internazionale.webp"
+                  alt="Escudo da Internazionale"
+                  class="time-logo"
+                />
+                <span class="time-nome">Internazionale</span>
+              </td>
+              <td class="pontos">19</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">6</td>
+              <td class="empates">1</td>
+              <td class="derrotas">1</td>
+            </tr>
+            <tr>
+              <td class="posicao oitavas-de-final">5</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/atletico-madrid.webp"
+                  alt="Escudo do Atlético de Madrid"
+                  class="time-logo"
+                />
+                <span class="time-nome">Atlético de Madrid</span>
+              </td>
+              <td class="pontos">18</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">6</td>
+              <td class="empates">0</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao oitavas-de-final">6</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/bayer-leverkusen.webp"
+                  alt="Escudo do Bayer Leverkusen"
+                  class="time-logo"
+                />
+                <span class="time-nome">Bayer Leverkusen</span>
+              </td>
+              <td class="pontos">18</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">5</td>
+              <td class="empates">1</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao oitavas-de-final">7</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/losc-lille.webp"
+                  alt="Escudo do Lille"
+                  class="time-logo"
+                />
+                <span class="time-nome">Lille</span>
+              </td>
+              <td class="pontos">18</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">5</td>
+              <td class="empates">1</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao oitavas-de-final">8</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/aston-villa.webp"
+                  alt="Escudo do Aston Villa"
+                  class="time-logo"
+                />
+                <span class="time-nome">Aston Villa</span>
+              </td>
+              <td class="pontos">16</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">5</td>
+              <td class="empates">1</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">9</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/atalanta.webp"
+                  alt="Escudo da Atalanta"
+                  class="time-logo"
+                />
+                <span class="time-nome">Atalanta</span>
+              </td>
+              <td class="pontos">15</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">4</td>
+              <td class="empates">3</td>
+              <td class="derrotas">1</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">10</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/dortmund.webp"
+                  alt="Escudo do Borussia Dortmund"
+                  class="time-logo"
+                />
+                <span class="time-nome">Borussia Dortmund</span>
+              </td>
+              <td class="pontos">15</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">5</td>
+              <td class="empates">0</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">11</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/real-madrid.webp"
+                  alt="Escudo do Real Madrid"
+                  class="time-logo"
+                />
+                <span class="time-nome">Real Madrid</span>
+              </td>
+              <td class="pontos">15</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">5</td>
+              <td class="empates">0</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">12</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/bayern-munchen.webp"
+                  alt="Escudo do Bayern Munchen"
+                  class="time-logo"
+                />
+                <span class="time-nome">Bayern</span>
+              </td>
+              <td class="pontos">15</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">5</td>
+              <td class="empates">0</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">13</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/milan.webp"
+                  alt="Escudo do Milan"
+                  class="time-logo"
+                />
+                <span class="time-nome">Milan</span>
+              </td>
+              <td class="pontos">15</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">5</td>
+              <td class="empates">0</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">14</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/psv.webp"
+                  alt="Escudo do PSV"
+                  class="time-logo"
+                />
+                <span class="time-nome">PSV</span>
+              </td>
+              <td class="pontos">14</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">4</td>
+              <td class="empates">2</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">15</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/psg.webp"
+                  alt="Escudo do PSG"
+                  class="time-logo"
+                />
+                <span class="time-nome">Paris SG</span>
+              </td>
+              <td class="pontos">13</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">4</td>
+              <td class="empates">1</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">16</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/benfica.webp"
+                  alt="Escudo do Benfica"
+                  class="time-logo"
+                />
+                <span class="time-nome">Benfica</span>
+              </td>
+              <td class="pontos">13</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">4</td>
+              <td class="empates">1</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">17</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/monaco.webp"
+                  alt="Escudo do Mônaco"
+                  class="time-logo"
+                />
+                <span class="time-nome">Mônaco</span>
+              </td>
+              <td class="pontos">13</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">4</td>
+              <td class="empates">1</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">18</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/brest.webp"
+                  alt="Escudo do Brest"
+                  class="time-logo"
+                />
+                <span class="time-nome">Brest</span>
+              </td>
+              <td class="pontos">13</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">4</td>
+              <td class="empates">1</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">19</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/feyenoord.webp"
+                  alt="Escudo do Feyenoord"
+                  class="time-logo"
+                />
+                <span class="time-nome">Feyenoord</span>
+              </td>
+              <td class="pontos">13</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">4</td>
+              <td class="empates">1</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">20</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/juventus.webp"
+                  alt="Escudo do Juventus"
+                  class="time-logo"
+                />
+                <span class="time-nome">Juventus</span>
+              </td>
+              <td class="pontos">12</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">3</td>
+              <td class="empates">3</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">21</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/celtic.webp"
+                  alt="Escudo do Celtic"
+                  class="time-logo"
+                />
+                <span class="time-nome">Celtic</span>
+              </td>
+              <td class="pontos">12</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">3</td>
+              <td class="empates">3</td>
+              <td class="derrotas">2</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">22</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/city.webp"
+                  alt="Escudo do Manchester City"
+                  class="time-logo"
+                />
+                <span class="time-nome">Manchester City</span>
+              </td>
+              <td class="pontos">11</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">3</td>
+              <td class="empates">2</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">23</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/sporting.webp"
+                  alt="Escudo do Sporting"
+                  class="time-logo"
+                />
+                <span class="time-nome">Sporting</span>
+              </td>
+              <td class="pontos">11</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">3</td>
+              <td class="empates">2</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao playoffs-oitavas-de-final">24</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/club-brugge.webp"
+                  alt="Escudo do Club Brugge"
+                  class="time-logo"
+                />
+                <span class="time-nome">Club Brugge</span>
+              </td>
+              <td class="pontos">11</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">3</td>
+              <td class="empates">2</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao">25</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/dinamo-zagreb.webp"
+                  alt="Escudo do Dínamo de Zagreb"
+                  class="time-logo"
+                />
+                <span class="time-nome">Dínamo Zagreb</span>
+              </td>
+              <td class="pontos">11</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">3</td>
+              <td class="empates">2</td>
+              <td class="derrotas">3</td>
+            </tr>
+            <tr>
+              <td class="posicao">26</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/sttutgart.webp"
+                  alt="Escudo do Sttutgart"
+                  class="time-logo"
+                />
+                <span class="time-nome">Sttutgart</span>
+              </td>
+              <td class="pontos">10</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">3</td>
+              <td class="empates">1</td>
+              <td class="derrotas">4</td>
+            </tr>
+            <tr>
+              <td class="posicao">27</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/shaktar-donetsk.webp"
+                  alt="Escudo do Shaktar Donetsk"
+                  class="time-logo"
+                />
+                <span class="time-nome">Shaktar Donetsk</span>
+              </td>
+              <td class="pontos">7</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">2</td>
+              <td class="empates">1</td>
+              <td class="derrotas">5</td>
+            </tr>
+            <tr>
+              <td class="posicao">28</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/bologna.webp"
+                  alt="Escudo do Bologna"
+                  class="time-logo"
+                />
+                <span class="time-nome">Bologna</span>
+              </td>
+              <td class="pontos">6</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">1</td>
+              <td class="empates">3</td>
+              <td class="derrotas">4</td>
+            </tr>
+            <tr>
+              <td class="posicao">29</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/estrela-vermelha.webp"
+                  alt="Escudo do Estrela Vermelha"
+                  class="time-logo"
+                />
+                <span class="time-nome">Estrela Vermelha</span>
+              </td>
+              <td class="pontos">6</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">2</td>
+              <td class="empates">0</td>
+              <td class="derrotas">6</td>
+            </tr>
+            <tr>
+              <td class="posicao">30</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/sturm-graz.webp"
+                  alt="Escudo do Sturm Graz"
+                  class="time-logo"
+                />
+                <span class="time-nome">Sturm Graz</span>
+              </td>
+              <td class="pontos">6</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">2</td>
+              <td class="empates">0</td>
+              <td class="derrotas">6</td>
+            </tr>
+            <tr>
+              <td class="posicao">31</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/sparta-praha.webp"
+                  alt="Escudo do Sparta Praga"
+                  class="time-logo"
+                />
+                <span class="time-nome">Sparta Praga</span>
+              </td>
+              <td class="pontos">4</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">1</td>
+              <td class="empates">1</td>
+              <td class="derrotas">6</td>
+            </tr>
+            <tr>
+              <td class="posicao">32</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/rb-leipzig.webp"
+                  alt="Escudo do RB Leipzig"
+                  class="time-logo"
+                />
+                <span class="time-nome">RB Leipzig</span>
+              </td>
+              <td class="pontos">3</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">1</td>
+              <td class="empates">0</td>
+              <td class="derrotas">7</td>
+            </tr>
+            <tr>
+              <td class="posicao">33</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/girona.webp"
+                  alt="Escudo do Girona"
+                  class="time-logo"
+                />
+                <span class="time-nome">Girona</span>
+              </td>
+              <td class="pontos">3</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">1</td>
+              <td class="empates">0</td>
+              <td class="derrotas">7</td>
+            </tr>
+            <tr>
+              <td class="posicao">34</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/red-bull-salzburg.webp"
+                  alt="Escudo do RB Salzburg"
+                  class="time-logo"
+                />
+                <span class="time-nome">RB Salzburg</span>
+              </td>
+              <td class="pontos">3</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">1</td>
+              <td class="empates">0</td>
+              <td class="derrotas">7</td>
+            </tr>
+            <tr>
+              <td class="posicao">35</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/slovan.webp"
+                  alt="Escudo do Slovan Bratislava"
+                  class="time-logo"
+                />
+                <span class="time-nome">Slovan Bratislava</span>
+              </td>
+              <td class="pontos">0</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">0</td>
+              <td class="empates">0</td>
+              <td class="derrotas">0</td>
+            </tr>
+            <tr>
+              <td class="posicao">36</td>
+              <td class="time">
+                <img
+                  src="../assets/img/teams/no-brazilians/young-boys.webp"
+                  alt="Escudo do Young Boys"
+                  class="time-logo"
+                />
+                <span class="time-nome">Young Boys</span>
+              </td>
+              <td class="pontos">0</td>
+              <td class="jogos">8</td>
+              <td class="vitorias">0</td>
+              <td class="empates">0</td>
+              <td class="derrotas">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer-container">
+      <p class="footer-main-paragraph">
+        O Futebol Total foi criado por Gabriel Lentine, um fã de futebol e
+        notícias sobre o esporte! Acompanhe-me nas minhas redes sociais.
+      </p>
+      <p class="footer-sub-paragraph">&copy LentineGabriel, 2025</p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/lentinegabriel/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/LentineGabriel" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

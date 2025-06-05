@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 /* navbar */
 .refresh-name {
   color: #fff;
@@ -35,21 +36,22 @@ main {
   flex: 1;
 }
 /* container de notícias */
-.futebol-nacional-container {
+.futebol-internacional-container {
   width: 70%;
   padding: 20px;
   position: relative;
 }
-.noticias-nacionais-container {
+.noticias-internacionais-container {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.abel-container,
-.dorival-container,
-.igor-jesus-container {
+.psg-container,
+.spurs-container,
+.cr7-container,
+.inzaghi-container {
   position: relative;
   width: 100%;
   max-width: 800px;
@@ -62,9 +64,10 @@ main {
   padding: 20px;
   box-sizing: border-box;
 }
-.abel-photo,
-.dorival-photo,
-.igor-jesus-photo {
+.marquinhos-photo,
+.spurs-photo,
+.cr7-photo,
+.inzaghi-photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -76,9 +79,10 @@ main {
   transform: translateZ(0);
   -webkit-font-smoothing: subpixel-antialiased;
 }
-.abel-container::after,
-.dorival-container::after,
-.igor-jesus-container::after {
+.psg-container::after,
+.spurs-container::after,
+.cr7-container::after,
+.inzaghi-container::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -89,12 +93,14 @@ main {
   z-index: 1;
   border-radius: 10px;
 }
-.abel-maintext,
-.abel-subtext,
-.dorival-maintext,
-.dorival-subtext,
-.igor-jesus-maintext,
-.igor-jesus-subtext {
+.marquinhos-maintext,
+.marquinhos-subtext,
+.spurs-maintext,
+.spurs-subtext,
+.cr7-maintext,
+.cr7-subtext,
+.inzaghi-maintext,
+.inzaghi-subtext {
   position: relative;
   z-index: 2;
   color: #fff;
@@ -107,68 +113,77 @@ main {
   word-wrap: break-word;
   width: 100%;
 }
-.abel-maintext,
-.dorival-maintext,
-.igor-jesus-maintext {
+.marquinhos-maintext,
+.spurs-maintext,
+.cr7-maintext,
+.inzaghi-maintext {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
-.abel-subtext,
-.dorival-subtext,
-.igor-jesus-subtext {
+.marquinhos-subtext,
+.spurs-subtext,
+.cr7-subtext,
+.inzaghi-subtext {
   font-size: 16px;
   color: #ccc;
   bottom: 85px;
 }
-.dorival-container {
+.spurs-container {
   bottom: 130px;
 }
-.dorival-maintext {
+.spurs-maintext {
   font-size: 24px;
   bottom: 50px;
 }
-.dorival-subtext {
+.spurs-subtext {
   bottom: 30px;
 }
-.dorival-photo {
+.spurs-photo {
   position: relative;
-  top: 50px;
+  top: 80px;
 }
-.abel-container::after {
+.psg-container::after {
   left: 20px;
   bottom: 72px;
 }
-.dorival-container::after {
+.spurs-container::after {
   left: 20px;
   bottom: 15px;
   width: calc(100% - 40px);
 }
-.igor-jesus-container {
+.cr7-container {
   bottom: 210px;
 }
-.igor-jesus-photo {
+.cr7-photo {
   position: relative;
   top: 60px;
 }
-.igor-jesus-maintext {
+.cr7-maintext {
   font-size: 24px;
   bottom: 50px;
 }
-.igor-jesus-subtext {
+.cr7-subtext {
   font-size: 17px;
   bottom: 30px;
 }
-.igor-jesus-container::after {
+.cr7-container::after {
   left: 20px;
   bottom: 6px;
   width: calc(100% - 40px);
 }
-
-/* Tabela de classificação */
+.inzaghi-container{
+  bottom: 213px;
+}
+.inzaghi-container::after {
+  left: 20px;
+  bottom: 74px;
+  width: calc(100% - 40px);
+}
+/* classificação */
 .classificacao-container {
   width: 30%;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-right: 10px;
   background-color: #1a1a1a;
   padding: 30px;
@@ -205,41 +220,26 @@ main {
   background-color: #17c033;
   cursor: pointer;
 }
-
-.tabela-classificacao tr:hover .posicao.libertadores {
+.tabela-classificacao tr:hover .posicao.oitavas-de-final {
   color: #17411c;
 }
-
-.tabela-classificacao tr:hover .posicao.pre-libertadores {
-  color: #17411c;
+.tabela-classificacao tr:hover .posicao.playoffs-oitavas-de-final {
+  color: #0a3bdd;
 }
-
-.tabela-classificacao tr:hover .posicao.sul-americana {
-  color: #17411c;
-}
-
 .posicao {
   width: 30px;
   text-align: center;
 }
-
 /* Cores das posições */
-.posicao.libertadores {
+.posicao.oitavas-de-final {
   color: #17c033;
 }
-.posicao.libertadores:hover {
+.posicao.oitavas-de-final:hover {
   color: #17411c;
 }
-.posicao.pre-libertadores {
-  color: #00bfff;
+.posicao.playoffs-oitavas-de-final {
+  color: #0a3bdd;
 }
-.posicao.sul-americana {
-  color: #0d8a1c;
-}
-.posicao.rebaixamento {
-  color: #ff0000;
-}
-
 .time {
   width: 180px;
   display: flex;
@@ -263,6 +263,7 @@ main {
   text-align: center;
 }
 
+/* footer */
 .footer-container {
   color: #fff;
   background-color: #15aa2e;
