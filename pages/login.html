@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo-site.ico"
+      type="image/x-icon"
+    />
     <title>Futebol Total - Login</title>
-</head>
-<body>
-    <h1>ÁREA DE LOGIN</h1>
-</body>
+  </head>
+  <body>
+    <h1 class="login-title">área de login</h1>
+    <form class="login-container">
+      <div class="name-container">
+        <label for="name" class="name-label">nome:</label>
+        <input
+          type="text"
+          name="name"
+          id="name-btn"
+          placeholder="Digite o seu nome aqui"
+          required
+        />
+      </div>
+
+      <div class="email-container">
+        <label for="email" class="email-label">email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email-btn"
+          placeholder="Digite o seu melhor email aqui"
+          required
+        />
+      </div>
+
+      <div class="birthday-container">
+        <label for="birthday" class="birth-label">nascimento:</label>
+        <input type="date" name="birthday" id="birthday-btn" required />
+      </div>
+
+      <div class="password-container">
+        <label for="password" class="password-label"
+          >senha (mínimo 8 caracteres):</label
+        >
+        <input
+          type="password"
+          name="password"
+          id="password-btn"
+          placeholder="Digite a sua senha aqui"
+          minlength="8"
+          required
+        />
+      </div>
+      <input type="submit" value="login" class="submit-btn" />
+    </form>
+
+    <hr class="divisoria" />
+
+    <div class="suggestion-container">
+      <h3 class="suggestion-title">Ou você também pode logar via:</h3>
+      <ul>
+        <li>
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
 </html>
