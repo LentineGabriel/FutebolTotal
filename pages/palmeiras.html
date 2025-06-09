@@ -3,31 +3,170 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/palmeiras.css">
+    <link rel="stylesheet" href="../css/palmeiras.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo-site.ico"
+      type="image/x-icon"
+    />
     <title>Palmeiras - FT</title>
   </head>
   <body>
     <header class="menu-container palmeiras">
       <nav class="navbar-principal">
-        <ul class="navbar-principal-itens">
-          <li class="menu-item">
-            <a href="../index.html">Início</a>
-          </li>
-          <li class="menu-item">
-            <a href="../pages/futebol_nacional.html">Futebol Nacional</a>
-          </li>
-          <li class="menu-item">
-            <a href="../pages/futebol_internacional.html">Futebol Internacional</a>
-          </li>
-          <li>
-            <a href="../pages/navbar-principal/login.html" class="login-btn"
-              >Entrar</a
-            >
-          </li>
-        </ul>
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../assets/img/teams/palmeiras.webp"
+            alt="Logo do Futebol Total"
+        /></a>
+        <a href="../pages/palmeiras.html" class="refresh-name">palmeiras</a>
       </nav>
     </header>
-    <h1>Palmeiras</h1>
+
+    <main>
+      <div class="noticias-container">
+        <article>
+          <figure class="palmeiras-mundial-container">
+            <img
+              src="../assets/img/palmeiras-mundial.webp"
+              alt="Jogadores do Palmeiras comemorando um gol marcado contra o Corinthians"
+              class="palmeiras-mundial-photo"
+            />
+            <figcaption class="palmeiras-mundial-maintext">
+              A 6 DIAS DO SUPER MUNDIAL!
+            </figcaption>
+            <p class="palmeiras-mundial-subtext">
+              Palmeiras viaja hoje para os EUA para a disputa do Super Mundial
+              de Clubes da FIFA.
+            </p>
+          </figure>
+        </article>
+
+        <article>
+          <figure class="estevao-container">
+            <img
+              src="../assets/img/estevao.webp"
+              alt="Estêvâo comemorando o seu gol marcado pelo Palmeiras"
+              class="estevao-photo"
+            />
+            <figcaption class="estevao-maintext">de olho na taça?</figcaption>
+            <p class="estevao-subtext">
+              Veja como Estêvâo está se preparando para a última competição com
+              a camisa do Palmeiras antes de ir para o Chelsea.
+            </p>
+          </figure>
+        </article>
+
+        <article>
+          <figure class="recovery-container">
+            <img
+              src="../assets/img/recovery.jpg"
+              alt="Palmeiras inaugura novo centro de recovery; jogadores já estão testando."
+              class="recovery-photo"
+            />
+            <figcaption class="recovery-maintext">
+              neurociência, pilates e acupuntura
+            </figcaption>
+            <p class="recovery-subtext">
+              Palmeiras inaugura novo centro de Recovery na Academia de Futebol.
+            </p>
+          </figure>
+        </article>
+
+        <hr class="divisoria" />
+
+        <article>
+          <figure class="allan-container">
+            <img
+              src="../assets/img/allan-renovacao.jpg"
+              alt="allan, pela seleção brasileira, comemorando um gol"
+              class="allan-photo"
+            />
+            <div class="allan-content">
+              <h2 class="allan-maintext">
+                Allan renova contrato até 2029 com o Maior Campeão do Brasil
+              </h2>
+              <p class="allan-subtext">
+                "um menino cheio de sonhos, e é muito gratificante poder estar
+                no Profissional e agora realizando esta renovação..."
+              </p>
+              <p class="allan-hour">Há 30 minutos</p>
+            </div>
+          </figure>
+        </article>
+
+        <article>
+          <figure class="jogo-treino-container">
+            <img
+              src="../assets/img/jogo-treino-palmeiras.jpg"
+              alt="Convocação da Seleção Feminina de Futebol"
+              class="jogo-treino-photo"
+            />
+            <div class="jogo-treino-content">
+              <h2 class="jogo-treino-maintext">
+                palmeiras faz jogo treino antes de embarcar para os eua
+              </h2>
+              <p class="jogo-treino-subtext">
+                Veja os relacionados das equipes 'titulares' e 'reservas'
+              </p>
+              <p class="jogo-treino-hour">Há 22 minutos</p>
+            </div>
+          </figure>
+        </article>
+
+        <article>
+          <figure class="icgt-container">
+            <img
+              src="../assets/img/icgt-palmeiras.jpeg"
+              alt="Palmeiras sub-20 levantando o troféu da ICGT Tournament"
+              class="icgt-photo"
+            />
+            <div class="icgt-content">
+              <h2 class="icgt-maintext">
+                sub-20 do palmeiras vence dinamarqueses e conquista tri do icgt
+                tournament
+              </h2>
+              <p class="icgt-subtext">
+                A equipe palestrina derrotou o Lyngby-DIN por 3 a 0
+                na final, nesta segunda-feira (09), e ficou com a taça do
+                torneio realizado em Uitgeest, na Holanda. Os gols das Crias da
+                Academia foram marcados por Erick Belé, Kidani e Riquelme
+                Fillipi.
+              </p>
+              <p class="icgt-hour">Há 22 minutos</p>
+            </div>
+          </figure>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer-container brasil">
+      <p class="footer-main-paragraph">
+        O Futebol Total foi criado por Gabriel Lentine, um fã de futebol e
+        notícias sobre o esporte! Acompanhe-me nas minhas redes sociais.
+      </p>
+      <p class="footer-sub-paragraph">&copy LentineGabriel, 2025</p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/lentinegabriel/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/LentineGabriel" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>

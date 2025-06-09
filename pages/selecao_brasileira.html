@@ -3,31 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/selecao_brasileira.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/img/logo-site.ico"
+      type="image/x-icon"
+    />
     <title>Brasil - FT</title>
   </head>
   <body>
     <header class="menu-container brasil">
       <nav class="navbar-principal">
-        <ul class="navbar-principal-itens">
-          <li class="menu-item"><a href="../index.html">Início</a></li>
-          <li class="menu-item">
-            <a href="../pages/futebol_nacional.html">Futebol Nacional</a>
-          </li>
-          <li class="menu-item">
-            <a href="../pages/futebol_internacional.html"
-              >Futebol Internacional</a
-            >
-          </li>
-          <li>
-            <a href="pages/navbar-principal/login.html" class="login-btn"
-              >Entrar</a
-            >
-          </li>
-        </ul>
+        <a href="../index.html">
+          <img
+            class="logo"
+            src="../assets/img/teams/brasil-logo.webp"
+            alt="Logo do Futebol Total"
+        /></a>
+        <a href="../pages/selecao_brasileira.html" class="refresh-name"
+          >seleção brasileira</a
+        >
       </nav>
     </header>
-    <h1>Seleção Brasileira</h1>
+
+    <main>
+      <div class="noticias-container">
+        <!-- notice one - Carlo Ancelotti -->
+        <article>
+          <figure class="carlo-ancelotti-container">
+            <img
+              src="../assets/img/carlo-ancelloti.webp"
+              alt="Carlo Ancelotti conversando com o seu auxiliar enquanto treina a seleção brasileira"
+              class="carlo-ancelotti-photo"
+            />
+            <figcaption class="carlo-ancelotti-maintext">
+              De olho no jogo contra o Equador!
+            </figcaption>
+            <p class="carlo-ancelotti-subtext">
+              Seleção brasileira está escalada para o confronto contra o
+              Equador. VEJA A ESCALAÇÃO!
+            </p>
+          </figure>
+        </article>
+
+        <!-- notice two - Alexsandro -->
+        <article>
+          <figure class="alexsandro-container">
+            <img
+              src="../assets/img/alexsandro.webp"
+              alt="Alexsandro jogando contra o Equador, seu primeiro jogo pela seleção brasileira"
+              class="alexsandro-photo"
+            />
+            <figcaption class="alexsandro-maintext">
+              veja como foi a estreia de alex com a camisa canarinho
+            </figcaption>
+            <p class="alexsandro-subtext">
+              O defensor foi um dos melhores em campo da partida.
+            </p>
+          </figure>
+        </article>
+
+        <!-- notice three - Seleção Brasileira -->
+        <article>
+          <figure class="selecao-brasileira-container">
+            <img
+              src="../assets/img/selecao.webp"
+              alt="Jogadores da seleção brasileira perfilados para o jogo contra o Equador."
+              class="selecao-brasileira-photo"
+            />
+            <figcaption class="selecao-brasileira-maintext">
+              atuação apagada em estreia de ancelotti
+            </figcaption>
+            <p class="selecao-brasileira-subtext">
+              Veja as notas dos jogadores da seleção no empate em 0x0 contra o
+              Equador, em Guayaquil.
+            </p>
+          </figure>
+        </article>
+
+        <hr class="divisoria" />
+
+        <!-- notice four - Raphinha -->
+        <article>
+          <figure class="raphinha-container">
+            <img
+              src="../assets/img/raphinha.webp"
+              alt="Raphinha, pela seleção brasileira, comemorando um gol"
+              class="raphinha-photo"
+            />
+            <div class="raphinha-content">
+              <h2 class="raphinha-maintext">
+                Escalação da Seleção: Ancelotti testa ataque com Matheus Cunha e
+                Raphinha ao lado de Vini
+              </h2>
+              <p class="raphinha-subtext">
+                Atacante do Barcelona volta de suspensão na vaga de Estêvão,
+                enquanto novo contratado do United é observado no lugar de
+                Richarlison. Time será definido em treino da segunda-feira
+              </p>
+              <p class="raphinha-hour">Há 30 minutos</p>
+            </div>
+          </figure>
+        </article>
+
+        <!-- notice five - Convocação Feminina -->
+        <article>
+          <figure class="selecao-feminina-container">
+            <img
+              src="../assets/img/convocação-feminina.avif"
+              alt="Convocação da Seleção Feminina de Futebol"
+              class="selecao-feminina-photo"
+            />
+            <div class="selecao-feminina-content">
+              <h2 class="selecao-feminina-maintext">
+                arthur elias convoca seleção feminina para a copa américa; veja
+                lista
+              </h2>
+              <p class="selecao-feminina-subtext">
+                Jhonson, jogadora de 19 anos do Corinthians que se destacou
+                contra o Japão, está entre as atacantes; Brasil vai em busca do
+                bicampeonato consecutivo no Equador
+              </p>
+              <p class="selecao-feminina-hour">Há 22 minutos</p>
+            </div>
+          </figure>
+        </article>
+
+        <!-- notice six - Ancelotti/Brasil -->
+        <article>
+          <figure class="brasil-ancelotti-container">
+            <img
+              src="../assets/img/brasil-ancelotti.webp"
+              alt="Convocação"
+              class="brasil-ancelotti-photo"
+            />
+            <div class="brasil-ancelotti-content">
+              <h2 class="brasil-ancelotti-maintext">
+                A missão mais difícil da vida de Ancelotti será fazer esta
+                Seleção Brasileira jogar futebol
+              </h2>
+              <p class="brasil-ancelotti-subtext">
+                Ninguém esperava que o Brasil apresentasse mudanças
+                significativas após Carlo Ancelotti comandar um punhado de
+                treinos, mas mesmo assim a atuação decepcionou.
+              </p>
+              <p class="brasil-ancelotti-hour">Há 22 minutos</p>
+            </div>
+          </figure>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer-container brasil">
+      <p class="footer-main-paragraph">
+        O Futebol Total foi criado por Gabriel Lentine, um fã de futebol e
+        notícias sobre o esporte! Acompanhe-me nas minhas redes sociais.
+      </p>
+      <p class="footer-sub-paragraph">&copy LentineGabriel, 2025</p>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/lentinegabriel/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/LentineGabriel" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
