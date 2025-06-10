@@ -3,9 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-.brasil {
-  background-color: #ffff00;
-}
+
 .refresh-name {
   color: #ece928;
   font-weight: lighter;
@@ -16,7 +14,6 @@
   padding: 20px;
   position: absolute;
   left: 50%;
-  bottom: 2px;
   transform: translateX(-50%);
   text-decoration: none;
 }
@@ -307,4 +304,10 @@ main {
 }
 .footer-container .fa-brands {
   color: #10d652;
+}
+.footer-container .fa-brands:hover {
+  color: #ece928;
+}
+.footer-palmeiras {
+  color: #fff;
 }

@@ -23,9 +23,10 @@ body {
   position: relative;
 }
 .logo {
+  margin-top: 10px;
   margin-left: 40px;
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
 }
 .navbar-principal-itens {
   position: absolute;
