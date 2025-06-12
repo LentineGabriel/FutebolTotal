@@ -1,8 +1,7 @@
-# ⚽​ Futebol Total - Landing Page
+# ⚽​ Futebol Total - Only Web Landing Page
 Bem-vindos ao site <b>Futebol Total.</b> Aqui, você fica por dentro de várias notícias do futebol nacional e internacional, além do seu clube do coração e de vários clubes
 ao redor do mundo!<br>
-Este projeto fora realizado por um fã assíduo e apaixonado pelo futebol. A ideia principal do projeto é "clonar" o site do GE (Globo Esporte), mas aplicando um estilo único de
-minha autoria.
+Este projeto fora realizado por um fã assíduo e apaixonado pelo futebol. A ideia principal do projeto é "clonar" o site do GE (Globo Esporte), mas aplicando um estilo único de minha autoria.
 <br>
 <h3>⚙️​ STACK</h3>
 <div>
@@ -14,7 +13,9 @@ Uma mudança que estou testando e tenho gostado muito é utilizar o CursorAI par
 projeto ainda mais rápido e prazeroso!
 <hr>
 <h3>📁 ORGANIZAÇÃO DO PROJETO</h3>
----
+📰​ Uma página .html e uma .css para cada time;<br>
+📂 Arquivos/Imagens organizados a nível de código e em pastas e subpastas;<br>
+​💻​ Responsividade para os principais monitores.
 <br><br>
 Início do Projeto: <b>28/05/25</b><br>
 Término do Projeto: <b>--/--/--</b>
