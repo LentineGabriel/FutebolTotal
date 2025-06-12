@@ -1,0 +1,55 @@
+/* Media queries para resolução 1280x720 (HD) */
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+  .chelsea-winner-container,
+  .carlo-ancelotti-container,
+  .palmeiras-mundial-container,
+  .base-dorival-container,
+  .zubeldia-container,
+  .diretoria-container {
+    margin-left: 20px;
+  }
+  .palmeiras-container,
+  .alexsandro-container,
+  .estevao-container,
+  .fabinho-soldado-container,
+  .zubeldia-casares-container,
+  .bh-container {
+    margin-left: 40px;
+  }
+  .flamengo-container,
+  .selecao-brasileira-container,
+  .recovery-container,
+  .vic-container,
+  .matheus-alves-container,
+  .okafor-container {
+    right: 55px;
+  }
+  .vic-maintext,
+  .vic-subtext,
+  .okafor-maintext,
+  .okafor-subtext {
+    bottom: 150px;
+  }
+  .okafor-subtext {
+    bottom: 140px;
+  }
+  .vic-subtext {
+    bottom: 130px;
+  }
+
+  .flamengo-container::after,
+  .selecao-brasileira-container::after,
+  .recovery-container::after,
+  .vic-container::after,
+  .matheus-alves-container::after,
+  .okafor-container::after {
+    width: 62%;
+  }
+
+  .refresh-name {
+    top: 0;
+  }
+  .classificacao-container {
+    width: 33%;
+  }
+}
