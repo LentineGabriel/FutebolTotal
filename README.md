@@ -18,4 +18,4 @@ projeto ainda mais rápido e prazeroso!
 ​💻​ Responsividade para os principais monitores.
 <br><br>
 Início do Projeto: <b>28/05/25</b><br>
-Término do Projeto: <b>--/--/--</b>
+Término do Projeto: <b>12/06/25</b>
